@@ -1,0 +1,6 @@
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:436:20:CLOCK_EnableClock	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:447:20:CLOCK_DisableClock	16	static
+../Common/pin_init.c:4:6:pin_init_all	8	static
+../Common/pin_init.c:11:6:pin_init_uart	8	static
+../Common/pin_init.c:16:6:pin_init_adc	8	static
+../Common/pin_init.c:21:6:pin_init_ftm	8	static
