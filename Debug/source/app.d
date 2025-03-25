@@ -1,5 +1,6 @@
-LED_RGB/led_rgb.o LED_RGB/led_rgb.d: ../LED_RGB/led_rgb.c \
- ../LED_RGB/led_rgb.h ../LED_RGB/pwm_controller.h \
+source/app.o source/app.d: ../source/app.c ../source/app.h \
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/led_rgb.h \
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/pwm_controller.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\Common/pin_init.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_swm.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_swm_connections.h \
@@ -16,9 +17,11 @@ LED_RGB/led_rgb.o LED_RGB/led_rgb.d: ../LED_RGB/led_rgb.c \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_reset.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_iocon.h \
- C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_ftm.h
-../LED_RGB/led_rgb.h:
-../LED_RGB/pwm_controller.h:
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_ftm.h \
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h
+../source/app.h:
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/led_rgb.h:
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/pwm_controller.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\Common/pin_init.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_swm.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_swm_connections.h:
@@ -36,3 +39,4 @@ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_reset.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_iocon.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_ftm.h:
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h:

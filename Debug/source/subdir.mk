@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../source/app.c \
 ../source/main.c \
 ../source/mtb.c \
 ../source/semihost_hardfault.c 
 
 C_DEPS += \
+./source/app.d \
 ./source/main.d \
 ./source/mtb.d \
 ./source/semihost_hardfault.d 
 
 OBJS += \
+./source/app.o \
 ./source/main.o \
 ./source/mtb.o \
 ./source/semihost_hardfault.o 
@@ -31,7 +34,7 @@ source/%.o: ../source/%.c source/subdir.mk
 clean: clean-source
 
 clean-source:
-	-$(RM) ./source/main.d ./source/main.o ./source/mtb.d ./source/mtb.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o
+	-$(RM) ./source/app.d ./source/app.o ./source/main.d ./source/main.o ./source/mtb.d ./source/mtb.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o
 
 .PHONY: clean-source
 

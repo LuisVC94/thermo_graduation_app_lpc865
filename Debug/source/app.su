@@ -1,0 +1,17 @@
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS/core_cm0plus.h:741:22:__NVIC_EnableIRQ	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_common_arm.h:570:24:EnableIRQ	24	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h:113:20:MRT_GetDefaultConfig	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h:129:20:MRT_SetupChannelMode	24	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h:158:20:MRT_EnableInterrupts	24	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h:209:24:MRT_GetStatusFlags	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h:223:20:MRT_ClearStatusFlags	24	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h:290:20:MRT_StartTimer	24	static
+../source/app.c:13:6:app_init	40	static
+../source/app.c:34:6:app_set_frequency	40	static
+../source/app.c:41:6:app_set_mode	16	static
+../source/app.c:46:6:app_set_color	24	static
+../source/app.c:63:6:app_set_brightness	16	static
+../source/app.c:68:6:app_configure_change_colors	24	static
+../source/app.c:110:6:app_configure_rainbow_colors	16	static
+../source/app.c:156:6:app_task	8	static
+../source/app.c:226:6:MRT0_IRQHandler	8	static

@@ -13,11 +13,11 @@
 // --------------------------------------------
 
 // FTM PINS -----------------------------------
-#define FTM0_CH0_PORT 	0
-#define FTM0_CH0_PIN 	17
+#define FTM0_CH0_PORT 	1
+#define FTM0_CH0_PIN 	1
 
-#define FTM0_CH1_PORT 	0
-#define FTM0_CH1_PIN 	18
+#define FTM0_CH1_PORT 	1
+#define FTM0_CH1_PIN 	2
 
 #define FTM0_CH2_PORT 	0
 #define FTM0_CH2_PIN 	19
@@ -25,17 +25,17 @@
 #define FTM0_CH3_PORT 	0
 #define FTM0_CH3_PIN 	20
 
-#define FTM0_CH4_PORT 	0
-#define FTM0_CH4_PIN 	21
+#define FTM0_CH4_PORT 	1
+#define FTM0_CH4_PIN 	5
 
 #define FTM0_CH5_PORT 	0
 #define FTM0_CH5_PIN 	22
 
-#define FTM1_CH0_PORT 	0
-#define FTM1_CH0_PIN 	15
+#define FTM1_CH0_PORT 	1
+#define FTM1_CH0_PIN 	8
 
-#define FTM1_CH1_PORT 	0
-#define FTM1_CH1_PIN 	16
+#define FTM1_CH1_PORT 	1
+#define FTM1_CH1_PIN 	9
 
 #define FTM1_CH2_PORT 	0
 #define FTM1_CH2_PIN 	26

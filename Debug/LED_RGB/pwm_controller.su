@@ -6,4 +6,4 @@ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_ftm.h:1042
 ../LED_RGB/pwm_controller.c:6:6:pwm_controller_init	64	static
 ../LED_RGB/pwm_controller.c:51:6:pwm_controller_set_dutty_cycle	40	static
 ../LED_RGB/pwm_controller.c:63:6:FTM0_IRQHandler	8	static
-../LED_RGB/pwm_controller.c:69:6:FTM1_IRQHandler	8	static
+../LED_RGB/pwm_controller.c:72:6:FTM1_IRQHandler	8	static

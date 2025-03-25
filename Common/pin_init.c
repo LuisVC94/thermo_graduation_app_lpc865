@@ -22,15 +22,15 @@ void pin_init_ftm(void)
 {
 	CLOCK_EnableClock(kCLOCK_Iocon);
 	CLOCK_EnableClock(kCLOCK_Swm);
-	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM0_CH0, kSWM_FTM_Selection0);
-	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM0_CH1, kSWM_FTM_Selection0);
+	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM0_CH0, kSWM_FTM_Selection1);
+	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM0_CH1, kSWM_FTM_Selection1);
 	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM0_CH2, kSWM_FTM_Selection0);
 	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM0_CH3, kSWM_FTM_Selection0);
-	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM0_CH4, kSWM_FTM_Selection0);
+	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM0_CH4, kSWM_FTM_Selection1);
 	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM0_CH5, kSWM_FTM_Selection0);
 
-	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM1_CH0, kSWM_FTM_Selection0);
-	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM1_CH1, kSWM_FTM_Selection0);
+	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM1_CH0, kSWM_FTM_Selection1);
+	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM1_CH1, kSWM_FTM_Selection1);
 	SWM_SetFlextimerPinSelect(SWM0, kSWM_FTM1_CH2, kSWM_FTM_Selection0);
 	CLOCK_DisableClock(kCLOCK_Swm);
 }
