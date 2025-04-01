@@ -6,7 +6,7 @@
  * Generated linker script file for LPC865
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on 25 mar. 2025 01:12:14
+ * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on 1 abr. 2025 02:07:36
  */
 
 INCLUDE "thermo_graduation_app_lpc865_Debug_library.ld"

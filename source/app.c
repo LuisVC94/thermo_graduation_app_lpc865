@@ -1,4 +1,5 @@
 #include "app.h"
+#include "audio_reader.h"
 
 static uint8_t g_app_task_flag = 0;
 static uint8_t g_audio_task_flag = 0;
@@ -16,6 +17,7 @@ void app_init(void)
     uint32_t mrt_clock;
 
 	init_leds_rgb();
+	audio_reader_init();
 
 	// MRT init -----------------------------------------------------------------
 	mrt_clock = CLOCK_GetFreq(kCLOCK_CoreSysClk);
@@ -155,8 +157,12 @@ void app_configure_rainbow_colors(uint32_t count)
 
 void app_task(void)
 {
+	static float32_t max_music_val = 0;
+	static float32_t min_music_val = 0;
 	static uint32_t s_state = 0;
 	static uint8_t brightness = 0;
+	float32_t prom_music_val = 0;
+	float32_t music_val = 0;
 	if(g_app_task_flag)
 	{
 		switch(g_app_mode)
@@ -208,6 +214,17 @@ void app_task(void)
 				led_rgb_set_color(k_led_rgb_3, &g_pixel3);
 			break;
 			case k_audio_blink_mode:
+				music_val = get_music_val()*100.0;
+				max_music_val = (max_music_val < music_val)? music_val:(max_music_val-1);
+				min_music_val = (min_music_val > music_val)? music_val:(min_music_val+1);
+				prom_music_val = (max_music_val + min_music_val)/2;
+				g_pixel3.brightness = 100;
+				g_pixel3.r = 0;
+				g_pixel3.g = 0;
+				g_pixel3.b = max_music_val-prom_music_val;
+				led_rgb_set_color(k_led_rgb_1, &g_pixel3);
+				led_rgb_set_color(k_led_rgb_2, &g_pixel3);
+				led_rgb_set_color(k_led_rgb_3, &g_pixel3);
 
 			break;
 			default:

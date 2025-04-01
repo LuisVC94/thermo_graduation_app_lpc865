@@ -15,7 +15,11 @@ void pin_init_uart(void)
 
 void pin_init_adc(void)
 {
-
+	CLOCK_EnableClock(kCLOCK_Iocon);
+	CLOCK_EnableClock(kCLOCK_Swm);
+    IOCON_PinMuxSet(IOCON, IOCON_INDEX_PIO0_7, IOCON_HYS_EN);
+    SWM_SetFixedPinSelect(SWM0, kSWM_ADC_CHN0, true);
+	CLOCK_DisableClock(kCLOCK_Swm);
 }
 
 void pin_init_ftm(void)

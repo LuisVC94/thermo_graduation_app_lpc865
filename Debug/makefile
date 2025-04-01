@@ -15,6 +15,7 @@ RM := rm -rf
 -include device/subdir.mk
 -include component/uart/subdir.mk
 -include board/subdir.mk
+-include audio_reader/subdir.mk
 -include LED_RGB/subdir.mk
 -include Common/subdir.mk
 ifneq ($(MAKECMDGOALS),clean)

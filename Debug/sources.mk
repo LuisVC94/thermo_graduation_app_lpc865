@@ -16,6 +16,7 @@ OBJS :=
 SUBDIRS := \
 Common \
 LED_RGB \
+audio_reader \
 board \
 component/uart \
 device \
