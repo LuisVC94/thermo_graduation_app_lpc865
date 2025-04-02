@@ -4,7 +4,7 @@
 #include "led_rgb.h"
 #include "fsl_mrt.h"
 
-#define AUDO_SAMPLE_FREQ 	10000
+#define AUDO_SAMPLE_FREQ 	20000
 #define TASK_FREQUENCY 		100
 
 typedef enum _app_modes_t

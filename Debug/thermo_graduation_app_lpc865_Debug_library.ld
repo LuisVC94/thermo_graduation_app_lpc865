@@ -6,7 +6,7 @@
  * Generated linker script file for LPC865
  * Created from library.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on 1 abr. 2025 02:07:36
+ * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on 2 abr. 2025 17:39:02
  */
 
 GROUP (

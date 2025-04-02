@@ -3,7 +3,12 @@
 #include "fsl_power.h"
 #include "fsl_device_registers.h"
 
+const float32_t c_ultra_low_pass_filtter[] = {1.000000000000000, 0.993736471541615, -0.996868235770807, 0.996868235770807}; // Low pass filtter 20Hz
+
 static adc_result_info_t gAdcResultInfoStruct;
+static float32_t g_audio_filttered = 0;
+static float32_t g_audio_peak = 0;
+static float32_t g_audio_peak_short = 0;
 
 void audio_reader_init(void)
 {
@@ -48,9 +53,36 @@ void audio_reader_init(void)
 float32_t get_music_val(void)
 {
 	float32_t val;
-	val = ((((float32_t)gAdcResultInfoStruct.result)/4095.0)-0.5)*2;
-	ADC_DoSoftwareTriggerConvSeqA(ADC0);
+	val = ((((float32_t)gAdcResultInfoStruct.result)/4095.0)-0.5)*2.0;
 	return val;
+}
+
+
+float32_t get_audio_filttered()
+{
+	return g_audio_filttered;
+}
+
+float32_t get_audio_peak()
+{
+	return g_audio_peak;
+}
+
+float32_t get_audio_peak_short()
+{
+	return g_audio_peak;
+}
+
+void audio_reader_task(void)
+{
+	static float32_t s_prev_input = 0;
+	float32_t input = get_music_val();
+	ADC_DoSoftwareTriggerConvSeqA(ADC0);
+
+	g_audio_filttered = c_ultra_low_pass_filtter[1]*g_audio_filttered + c_ultra_low_pass_filtter[2]*input + c_ultra_low_pass_filtter[3]*s_prev_input;
+
+	g_audio_peak = (g_audio_peak < input)? input:((g_audio_peak > 0.0)? (g_audio_peak-DECREASE_VALUE_PEAK_DETECTOR):0);
+	g_audio_peak_short = (g_audio_peak_short < input)? input:((g_audio_peak_short > 0.0)? (g_audio_peak_short-DECREASE_VALUE_PEAK_DETECTOR_SHORT):0);
 }
 
 void ADC0_SEQA_IRQHandler(void)

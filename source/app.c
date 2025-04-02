@@ -109,6 +109,44 @@ void app_configure_change_colors(uint32_t count)
 	app_set_color(&color, &color, &color, g_brightness);
 }
 
+void app_configure_audio(uint32_t count)
+{
+	rgb_led_pixel_t color;
+	if(count < 100)
+	{
+		color.g = count;
+		color.r = 0;
+		color.b = 0;
+	}
+	else if(count < 200)
+	{
+		count -= 100;
+		color.g = 100-count;
+		color.r = count;
+		color.b = 0;
+	}
+	else if(count < 300)
+	{
+		color.g = 0;
+		color.r = 100;
+		color.b = 0;
+	}
+	else if(count < 400)
+	{
+		count -= 300;
+		color.g = 0;
+		color.r = 100-count;
+		color.b = count;
+	}
+	else
+	{
+		color.g = 0;
+		color.r = 0;
+		color.b = 100;
+	}
+	app_set_color(&color, &color, &color, g_brightness);
+}
+
 void app_configure_rainbow_colors(uint32_t count)
 {
 	if(count < 100)
@@ -157,12 +195,11 @@ void app_configure_rainbow_colors(uint32_t count)
 
 void app_task(void)
 {
-	static float32_t max_music_val = 0;
-	static float32_t min_music_val = 0;
 	static uint32_t s_state = 0;
 	static uint8_t brightness = 0;
-	float32_t prom_music_val = 0;
+	float32_t max_music_val = 0;
 	float32_t music_val = 0;
+	float32_t percentaje = 0;
 	if(g_app_task_flag)
 	{
 		switch(g_app_mode)
@@ -214,16 +251,15 @@ void app_task(void)
 				led_rgb_set_color(k_led_rgb_3, &g_pixel3);
 			break;
 			case k_audio_blink_mode:
-				music_val = get_music_val()*100.0;
-				max_music_val = (max_music_val < music_val)? music_val:(max_music_val-1);
-				min_music_val = (min_music_val > music_val)? music_val:(min_music_val+1);
-				prom_music_val = (max_music_val + min_music_val)/2;
-				g_pixel3.brightness = 100;
-				g_pixel3.r = 0;
-				g_pixel3.g = 0;
-				g_pixel3.b = max_music_val-prom_music_val;
-				led_rgb_set_color(k_led_rgb_1, &g_pixel3);
-				led_rgb_set_color(k_led_rgb_2, &g_pixel3);
+				max_music_val = get_audio_peak();
+				music_val = get_audio_peak_short();
+				percentaje = (music_val/max_music_val)*500.0;
+				app_configure_audio((uint32_t)percentaje);
+				g_pixel1.brightness = g_brightness;
+				g_pixel2.brightness = g_brightness;
+				g_pixel3.brightness = g_brightness;
+				led_rgb_set_color(k_led_rgb_1, &g_pixel1);
+				led_rgb_set_color(k_led_rgb_2, &g_pixel2);
 				led_rgb_set_color(k_led_rgb_3, &g_pixel3);
 
 			break;
@@ -235,7 +271,7 @@ void app_task(void)
 	}
 	if(g_audio_task_flag)
 	{
-		// TODO audio task
+		audio_reader_task();
 		g_audio_task_flag = 0;
 	}
 }
