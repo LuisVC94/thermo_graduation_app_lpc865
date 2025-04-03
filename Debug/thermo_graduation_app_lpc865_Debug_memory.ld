@@ -6,7 +6,7 @@
  * Generated linker script file for LPC865
  * Created from memory.ldt by FMCreateLinkMemory
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on 3 abr. 2025 02:57:19
+ * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on 3 abr. 2025 03:10:36
  */
 
 MEMORY

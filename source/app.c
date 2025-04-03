@@ -255,7 +255,7 @@ void app_task(void)
 				max_music_val = (max_music_val < MIN_MAX_AUDIO)? MIN_MAX_AUDIO:max_music_val;
 				music_val = get_audio_peak_short();
 				music_val = (music_val < MIN_AVAILABLE_AUDIO)? 0:music_val;
-				percentaje = (music_val/max_music_val)*500.0;
+				percentaje = (music_val/max_music_val)*600.0;
 				app_configure_audio((uint32_t)percentaje);
 				g_pixel1.brightness = g_brightness;
 				g_pixel2.brightness = g_brightness;
