@@ -23,7 +23,7 @@ int main(void)
 	pixel3.b = 0;
 	pixel3.brightness = 100;
 	app_set_color(&pixel1, &pixel2, &pixel3, 100);
-	app_set_mode(k_audio_blink_mode);
+	app_set_mode(k_audio_fft_mode);
 	app_set_frequency(20);
 	while(1)
 	{

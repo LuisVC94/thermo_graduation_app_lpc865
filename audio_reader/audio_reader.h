@@ -12,7 +12,19 @@ float32_t get_music_val(void);
 
 float32_t get_audio_filttered();
 
+float32_t get_audio_low();
+
+float32_t get_audio_mid();
+
+float32_t get_audio_high();
+
 float32_t get_audio_peak();
+
+float32_t get_audio_peak_low();
+
+float32_t get_audio_peak_mid();
+
+float32_t get_audio_peak_high();
 
 float32_t get_audio_peak_short();
 

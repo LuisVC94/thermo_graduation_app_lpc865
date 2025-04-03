@@ -51,7 +51,9 @@ source/app.o source/app.d: ../source/app.c ../source/app.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS\DSP\Include/dsp/filtering_functions.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS\DSP\Include/dsp/support_functions.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS\DSP\Include/dsp/quaternion_math_functions.h \
- C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS\DSP\Include/dsp/window_functions.h
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS\DSP\Include/dsp/window_functions.h \
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\board/clock_config.h \
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_common.h
 ../source/app.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/led_rgb.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/pwm_controller.h:
@@ -106,3 +108,5 @@ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS\DSP\Include/dsp/
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS\DSP\Include/dsp/support_functions.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS\DSP\Include/dsp/quaternion_math_functions.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS\DSP\Include/dsp/window_functions.h:
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\board/clock_config.h:
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_common.h:
