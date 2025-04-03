@@ -1,5 +1,5 @@
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\CMSIS/core_cm0plus.h:741:22:__NVIC_EnableIRQ	16	static
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\CMSIS/core_cm0plus.h:779:22:__NVIC_DisableIRQ	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS/core_cm0plus.h:741:22:__NVIC_EnableIRQ	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\CMSIS/core_cm0plus.h:779:22:__NVIC_DisableIRQ	16	static
 ../drivers/fsl_common_arm.h:570:24:EnableIRQ	24	static
 ../drivers/fsl_common_arm.h:614:24:DisableIRQ	24	static
 ../drivers/fsl_power.c:25:6:POWER_EnterSleep	24	static

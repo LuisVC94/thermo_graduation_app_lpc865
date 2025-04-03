@@ -3,8 +3,8 @@
 
 #include "arm_math.h"
 
-#define DECREASE_VALUE_PEAK_DETECTOR 0.0001
-#define DECREASE_VALUE_PEAK_DETECTOR_SHORT 0.01
+#define DECREASE_VALUE_PEAK_DETECTOR 0.00002
+#define DECREASE_VALUE_PEAK_DETECTOR_SHORT 0.002
 
 void audio_reader_init(void);
 

@@ -70,7 +70,7 @@ float32_t get_audio_peak()
 
 float32_t get_audio_peak_short()
 {
-	return g_audio_peak;
+	return g_audio_peak_short;
 }
 
 void audio_reader_task(void)
@@ -80,9 +80,10 @@ void audio_reader_task(void)
 	ADC_DoSoftwareTriggerConvSeqA(ADC0);
 
 	g_audio_filttered = c_ultra_low_pass_filtter[1]*g_audio_filttered + c_ultra_low_pass_filtter[2]*input + c_ultra_low_pass_filtter[3]*s_prev_input;
+	s_prev_input = input;
 
-	g_audio_peak = (g_audio_peak < input)? input:((g_audio_peak > 0.0)? (g_audio_peak-DECREASE_VALUE_PEAK_DETECTOR):0);
-	g_audio_peak_short = (g_audio_peak_short < input)? input:((g_audio_peak_short > 0.0)? (g_audio_peak_short-DECREASE_VALUE_PEAK_DETECTOR_SHORT):0);
+	g_audio_peak = (g_audio_peak < g_audio_filttered)? g_audio_filttered:((g_audio_peak > DECREASE_VALUE_PEAK_DETECTOR)? (g_audio_peak-DECREASE_VALUE_PEAK_DETECTOR):0);
+	g_audio_peak_short = (g_audio_peak_short < g_audio_filttered)? g_audio_filttered:((g_audio_peak_short > DECREASE_VALUE_PEAK_DETECTOR_SHORT)? (g_audio_peak_short-DECREASE_VALUE_PEAK_DETECTOR_SHORT):0);
 }
 
 void ADC0_SEQA_IRQHandler(void)

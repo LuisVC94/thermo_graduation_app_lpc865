@@ -24,7 +24,7 @@ int main(void)
 	pixel3.brightness = 100;
 	app_set_color(&pixel1, &pixel2, &pixel3, 100);
 	app_set_mode(k_audio_blink_mode);
-	app_set_frequency(10000);
+	app_set_frequency(20);
 	while(1)
 	{
 		app_task();

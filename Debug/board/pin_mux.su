@@ -1,6 +1,6 @@
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\drivers/fsl_clock.h:436:20:CLOCK_EnableClock	16	static
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\drivers/fsl_clock.h:447:20:CLOCK_DisableClock	16	static
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\drivers/fsl_iocon.h:102:22:IOCON_PinMuxSet	24	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:436:20:CLOCK_EnableClock	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:447:20:CLOCK_DisableClock	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_iocon.h:102:22:IOCON_PinMuxSet	24	static
 ../board/pin_mux.c:39:6:BOARD_InitBootPins	8	static
 ../board/pin_mux.c:62:6:BOARD_InitPins	8	static
 ../board/pin_mux.c:89:6:BOARD_InitLEDsPins	32	static

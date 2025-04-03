@@ -1,8 +1,8 @@
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\drivers/fsl_clock.h:458:20:CLOCK_Select	16	static
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\drivers/fsl_clock.h:469:20:CLOCK_SetClkDivider	16	static
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\drivers/fsl_clock.h:490:20:CLOCK_SetCoreSysClkDiv	16	static
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\drivers/fsl_clock.h:748:20:CLOCK_SetFroOscFreq	16	static
-C:\Workspaces_NXP\Grad\thermo_graduation_app_lpc865\drivers/fsl_power.h:147:20:POWER_DisablePD	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:458:20:CLOCK_Select	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:469:20:CLOCK_SetClkDivider	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:490:20:CLOCK_SetCoreSysClkDiv	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:748:20:CLOCK_SetFroOscFreq	16	static
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_power.h:147:20:POWER_DisablePD	16	static
 ../board/clock_config.c:44:6:BOARD_InitBootClocks	8	static
 ../board/clock_config.c:74:6:BOARD_BootClockFRO18M	8	static
 ../board/clock_config.c:114:6:BOARD_BootClockFRO24M	8	static
