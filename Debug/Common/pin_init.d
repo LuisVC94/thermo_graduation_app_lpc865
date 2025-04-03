@@ -15,7 +15,8 @@ Common/pin_init.o Common/pin_init.d: ../Common/pin_init.c \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_reset.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_iocon.h \
- C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h \
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_gpio.h
 ../Common/pin_init.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_swm.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_swm_connections.h:
@@ -33,3 +34,4 @@ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_reset.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_iocon.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_clock.h:
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_gpio.h:

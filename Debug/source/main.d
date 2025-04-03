@@ -19,7 +19,8 @@ source/main.o source/main.d: ../source/main.c \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/led_rgb.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/pwm_controller.h \
  C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_ftm.h \
- C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h \
+ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_gpio.h
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\Common/pin_init.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_swm.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_swm_connections.h:
@@ -41,3 +42,4 @@ C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/led_rgb.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\LED_RGB/pwm_controller.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_ftm.h:
 C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_mrt.h:
+C:\Workspaces_NXP\Graduacion\thermo_graduation_app_lpc865\drivers/fsl_gpio.h:

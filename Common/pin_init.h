@@ -49,4 +49,6 @@ void pin_init_adc(void);
 
 void pin_init_ftm(void);
 
+void pin_init_button(void);
+
 #endif /* PIN_INIT_H_ */
